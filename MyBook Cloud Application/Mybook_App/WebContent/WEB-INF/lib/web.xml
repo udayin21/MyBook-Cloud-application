@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+    version="2.4">
+
+<display-name>Login</display-name>
+<servlet>
+<servlet-name>log</servlet-name>
+<servlet-class>Azure_App.Login</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>log</servlet-name>
+<url-pattern>/logServlet</url-pattern>
+</servlet-mapping>
+
+<display-name>Home</display-name>
+<servlet>
+<servlet-name>home</servlet-name>
+<servlet-class>Azure_App.Follow</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>home</servlet-name>
+<url-pattern>/followServlet</url-pattern>
+</servlet-mapping>
+
+<display-name>Followers</display-name>
+<servlet>
+<servlet-name>fol</servlet-name>
+<servlet-class>Azure_App.Following</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>fol</servlet-name>
+<url-pattern>/followersServlet</url-pattern>
+</servlet-mapping>
+
+
+<display-name>MyObjects</display-name>
+<servlet>
+<servlet-name>pobj</servlet-name>
+<servlet-class>Azure_App.Personal</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>pobj</servlet-name>
+<url-pattern>/persObjServlet</url-pattern>
+</servlet-mapping>
+
+<display-name>MyFriends</display-name>
+<servlet>
+<servlet-name>friendobj</servlet-name>
+<servlet-class>Azure_App.Friends</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>friendobj</servlet-name>
+<url-pattern>/friendsObjServlet</url-pattern>
+</servlet-mapping>
+
+</web-app>
